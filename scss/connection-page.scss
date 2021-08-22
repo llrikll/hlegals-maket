@@ -1,0 +1,175 @@
+@import "variable.scss";
+
+.connection {
+    padding: 80px 0 67px 0;
+    display: flex;
+    justify-content: center;
+}
+.connection-text {
+    padding: 128px 0 137px 0;
+    margin-right: 153px;
+}
+.connection-mob {
+    display: none;
+}
+.connection-adress {
+    font-size: 21px;
+    line-height: 30px;
+    color: $color--contact;
+    width: 414px;
+    border-bottom: 4px solid $color--dots;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.connection-tell {
+    text-decoration: none;
+    font-size: 21px;
+    line-height: 30px;
+    color: $color--tell;
+    width: 414px;
+    display: block;
+    margin-bottom: $margin-bottom20;
+}
+.connection-mail {
+    font-size: 21px;
+    line-height: 30px;
+    width: 414px;
+    color: $color--reg_blue;
+    display: block;
+    border-bottom: 4px solid $color--dots;
+    padding-bottom: 40px;
+    margin-bottom: $margin-bottom20;
+}
+.connection-social {
+    display: flex;
+    align-items: center;
+}
+.connection-link {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color--reg_blue;
+    width: 123px;
+    text-decoration: none;
+    &:hover {
+        color: $color--accent;
+    }
+}
+.connection-facebook {
+    margin-right: 10px;
+}
+.forma {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+    background-color: $color--bg_gray;
+    width: 527px;
+    border-radius: 12px;
+}
+.forma-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: $margin-bottom20;
+    background-image: $color--adaptiv-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: $color--accent;
+}
+.forma-subtitle {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color--text_gray;
+    margin-left: 10px;
+    margin-bottom: $margin-bottom20;
+}
+.forma-data {
+    border: none;
+    margin-bottom: $margin-bottom20;
+    border-radius: 8px;
+    padding: 16px 0 13px 10px;
+   
+    &::placeholder {
+        font-family: 'TT-Norms';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 26px;
+        color: $color--text_gray;
+    }
+    &:focus::placeholder {
+        color: transparent;
+    }
+}
+.form-message {
+    padding: 14px 0 13px 10px;
+    width: 487px;
+    height: 180px;
+    resize: none;
+}
+.forma-submit {
+    padding: 15px 71px;
+}
+.map {
+    line-height: 0;
+    text-align: center;
+}
+.google-map {
+    width: 100%;
+    max-width: 1440px;
+}
+
+@media (max-width: 1319px) {
+    .connection {
+        padding: 40px 20px;
+    }
+    .connection-text {
+        width: 100%;
+        max-width: 414px;
+        margin-right: 60px;
+    }
+    .connection-forma {
+        width: 100%;
+        max-width: 487px;
+    }
+    .forma {
+        width: 100%;
+        max-width: 487px;
+    }
+    .forma-data {
+        width: 100%;
+        max-width: 487px;
+    }
+    .connection-tell, .connection-adress, .connection-mail, .connection-social {
+        width: 100%;
+        max-width: 414px;;
+    }
+}
+
+@media (max-width: 767px) {
+    .connection {
+        padding: 20px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .connection-adress {
+        display: none;
+    }
+    .connection-mob {
+        display: block;
+    }
+    .connection-text {
+        padding: 0;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .forma-title {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 26px;
+        color: #F0145A;
+    }
+}

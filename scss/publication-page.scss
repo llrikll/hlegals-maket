@@ -1,0 +1,115 @@
+@import "variable.scss";
+
+.publication-main {
+    padding: 40px 0 60px 0;
+    background-color: $color--bg_gray;
+}
+.publication-header {
+    padding-bottom: 43px;
+}
+.publication-block {
+    display: flex;
+    justify-content: space-between;
+}
+.checkbox-button {
+    text-align: center;
+    line-height: 0;
+    margin-bottom: 40px;
+}
+.checkbox {
+	display: inline-block;      
+	position: relative;
+}
+.checkbox .checkbox-switch {
+	display: inline-block;	
+	height: 47px;
+	width: 260px;
+	background: $color--dots;
+    border-radius:  12px;
+	transition: background-color 0.3s cubic-bezier(0, 1, 0.5, 1);
+}
+.checkbox .checkbox-switch:before {
+	content: attr(data-label-on);
+	display: inline-block;	
+    padding: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+	position: absolute;
+	top: 3px;
+	left: 155px;	
+	color: $color--contact;
+}
+.checkbox .checkbox-switch:after {
+	content: attr(data-label-off);
+	display: inline-block;
+	width: 124px;	
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+	position: absolute;
+	top: 3px;
+	left: 3px;	
+    padding: 10px 0;
+	background: $color--bg_wh;
+	color: $color--contact;	
+	transition: transform 0.3s cubic-bezier(0, 1, 0.5, 1);
+    border-radius: 12px;
+}
+.checkbox input[type="checkbox"] {
+	display: none;		
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-switch {
+	background-color: $color--dots;
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-switch:before {
+	content: attr(data-label-off);
+	left: 35px;
+}
+.checkbox input[type="checkbox"]:checked + .checkbox-switch:after {
+	content: attr(data-label-on);
+	color: $color--contact;
+	transform: translate3d(130px, 0, 0);
+}
+.checkbox:hover {
+	cursor: pointer;
+}
+.publication-mobil {
+    display: none;
+}
+
+@media (max-width: 1319px) {
+    .mid-none {
+        display: none;
+    }
+    .publication-block {
+        justify-content: center;
+    }
+    .public-card_discription {
+        width: 100%;
+        max-width: 372px;
+    }
+    .public-last {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .publication-block {
+        display: none;
+    }
+    .publication-mobil {
+        display: block;
+        padding: 0 20px;
+    }
+    .checkbox-button {
+        margin-bottom: $margin-bottom20;
+    }
+    .publication-header {
+        padding-bottom: 5px;
+    }
+    .publication-main  {
+        padding: 20px 0 40px 0;
+    }
+    
+}

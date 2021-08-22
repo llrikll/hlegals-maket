@@ -1,0 +1,120 @@
+
+#wrapper {
+  padding-top: 80px;
+  display: flex;
+}
+#left-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slaider-text {
+  margin-bottom: 15px;
+}
+#border {
+  margin-left: 40px;
+  height: 290px;
+  width: 4px;
+  background-color: #E6E6F0;
+}
+#border #line.one {
+  width: 4px;
+  height: 75px;
+  background-color: #F0145A;
+  margin-left: 0;
+
+  -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+}
+#border #line.two {
+  width: 4px;
+  height: 75px;
+  background-color: #F0145A;
+  margin-left: 0;
+  margin-top: 60px;
+  -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+}
+#border #line.three {
+  width: 4px;
+  height: 75px;
+  background-color: #F0145A;
+  margin-left: 0;
+  margin-top: 125px;
+  -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+}
+#border #line.four {
+  width: 4px;
+  height: 75px;
+  background-color: #F0145A;
+  margin-left: 0;
+  margin-top: 215px;
+  -webkit-transition: all .4s ease-in-out;
+          transition: all .4s ease-in-out;
+}
+
+#right-side {
+  padding-top: 45px;
+  margin-left: 40px;
+}
+#right-side #first, #right-side #second, #right-side #third, #right-side #fourth {
+  background: #FFFFFF;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  color: #000;
+  display: none;
+}
+#right-side #first.active, #right-side #second.active, #right-side #third.active, #right-side #fourth.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 600px;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.subtitle {
+  width: 600px;
+  font-size: 21px;
+  line-height: 30px;
+}
+.active{
+  background-image: linear-gradient(75.00deg, #EF8080 0.84%, #F0145A 99.96%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.slaider-text:hover {
+  background-image: linear-gradient(75.00deg, #EF8080 0.84%, #F0145A 99.96%);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
+@media (max-width: 1319px) {
+  #wrapper {
+   justify-content: center;
+  }
+  #right-side {
+    max-width: 600px;
+    width: 100%;
+  }
+  .title {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  .subtitle {
+    width: 100%;
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 767px) {
+  #wrapper  {
+    display: none;
+}
+}

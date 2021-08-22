@@ -1,0 +1,142 @@
+@import "variable.scss";
+
+.entry {
+    padding: 60px 0;
+}
+.google-block {
+    width: 100%;
+    max-width: 909px;
+    margin: 0 auto;
+    border-bottom: 4px solid $color--dots;
+    margin-bottom: 40px;
+}
+.google-img {
+    width: 100%;
+    max-width: 909px;
+    margin-bottom: 40px;
+}
+.google-title {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;  
+    width: 100%;
+    max-width: 866px;
+    color: $color--contact;
+    margin-bottom: 10px;
+}
+.google-date {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color--text_gray;
+    width: 100%;
+    max-width: 866px;
+    margin-bottom: 40px;
+}
+.entry-discription {
+    width: 100%;
+    max-width: 866px;
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-black;
+    margin: 0 auto 40px auto;
+}
+.entry-title {
+    width: 100%;
+    max-width: 906px;
+    margin: 0 auto 40px auto;
+}
+.entry-subtitle {
+    width: 100%;
+    max-width: 866px;
+    margin: 0 auto 20px auto;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color--tell;
+}
+.enty-list {
+    width: 100%;
+    max-width: 866px;
+    margin: 0 auto 25px auto;
+}
+.enty-text {
+    margin: 0 0 0 10px;
+}
+.enty-item {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color--accent;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.personal-data {
+    width: 100%;
+    max-width: 604px;
+    margin: 0 auto 40px auto ;
+    line-height: 0;
+}
+.personal-data-img {
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 866px;
+}
+.personal-data-inscription {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: $color--text_gray;
+    margin-bottom: 40px;
+}
+.entry-border {
+    padding-top: 20px;
+    border-top: 4px solid $color--dots;
+    width: 100%;
+    max-width: 866px;
+    margin: 0 auto;
+}
+.entry-social {
+    padding: 9px;
+    background-color: $color--bg_gray;
+    border-radius: 12px;
+}
+.entry-link {
+    margin-right: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 767px)  {
+    .entry {
+        padding: 20px 0 40px 0;
+    }
+    .google-block {
+        margin-bottom: $margin-bottom20;
+    }
+    .google-img {
+        margin-bottom: $margin-bottom20;
+    }
+    .google-title {
+        font-size: 22px;
+        line-height: 26px;
+        padding: 0 20px;
+    }
+    .google-date {
+        padding: 0 20px;
+        margin-bottom: $margin-bottom20;
+    }
+    .entry-subtitle {
+        font-size: 18px;
+        line-height: 21px;
+    }
+    .entry-container {
+        padding: 0;
+    }
+    .container-mobil {
+        padding: 0 20px;
+    }
+    .entry-discription {
+        margin-bottom: $margin-bottom20;
+    }
+}

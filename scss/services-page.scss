@@ -1,0 +1,34 @@
+@import "variable.scss";
+
+.activ-service {
+    border-bottom: 2px solid $color--white;
+    cursor: default;
+}
+.footer-noline {
+    padding: 30px 0;
+}
+
+@media (max-width: 767px)  {
+
+.hlegals_service-img {
+    width: 200px;
+}
+.footer-services{
+    border-top: 0;
+}
+.services-lang {
+    color: $color--white;
+}
+.services-tell {
+    color: $color--white;
+}
+.services-mob {
+    padding-top: 20px;
+}
+.services-inscription-mob {
+    display: none;
+}
+}
+
+
+                   

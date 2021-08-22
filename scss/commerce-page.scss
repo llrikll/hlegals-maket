@@ -1,0 +1,171 @@
+@import "variable.scss";
+
+.bg-keayboard {
+    background-image:   linear-gradient(180deg, rgba(50, 50, 100, 0) 16.67%, #323264 100%),
+                        url("../img-s/keyboard.png");
+    background-size: 100% 200px, cover;
+    background-repeat: no-repeat, no-repeat;
+    background-position: bottom center, top center;
+}
+.commerce-bg {
+    background-image:  linear-gradient(195deg, #323264 37.93%, #323264 78.17%, #643E72 99.46%);
+    background-size:   auto;
+    background-repeat: no-repeat;
+
+}
+.commerce-top {
+    width: 1092px;
+    padding-top: 50px;
+    text-align: center;
+    margin: 0 auto;
+}
+.commerce-bottom {
+    width: 1092px;
+    padding: 40px 0 80px 0;
+    margin: 0 auto;
+    border-bottom: 4px solid $color--wh_border;
+}
+.commerce-icon {
+    margin-bottom: 10px;
+}
+.commerce-title {
+    margin-bottom: $margin-bottom20;
+}
+.commerce-discription {
+    width: 861px;
+    margin: 0 auto;
+    font-size: 21px;
+    line-height: 30px;
+    color: $color--white;
+}
+.commerce-button {
+    padding: 15px 36px;
+}
+.commerce-subtext {
+    width: 1092px;
+    padding-bottom: 65px;
+    margin: 0 auto;
+    display: flex;
+}
+.commerce-subtitle {
+    font-weight: 500;
+    padding-top: 20px;
+    width: 1092px;
+    margin: 0 auto 20px auto;
+    font-size: 24px;
+    line-height: 28px;
+    color: $color--white;
+}
+.commerce-list {
+    margin-right: 62px;
+    margin-left: 25px;
+}
+.commerce-item {
+    width: 502px;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    color: $color--white;
+    position: relative;
+    &::before {
+        content: "\2022";
+        color: $color--accent;
+        font-size: 26px;
+        font-weight: 700;
+        left: -18px;
+        line-height: 18px;        
+        position: absolute;
+        top: 3px;
+    }
+}
+.popup_consl {
+    background-color: rgba(50, 50, 100, 0.7);
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 2;
+}
+.popup_consl.open {
+    display: flex;
+}
+.commerce-forma {
+    margin: auto;
+}
+.forma-head {
+    position: relative;
+}
+.close_consl {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    border: none;
+    margin-left: auto;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 1319px) {
+    .commerce-top {
+        width: 100%;
+        max-width: 800px;
+    }
+    .commerce-bottom {
+        width: 100%;
+        max-width: 1090px;
+    }
+    .commerce-subtext {
+        width: 100%;
+        max-width: 1090px;
+    }
+    .commerce-item {
+        width: 99%;
+        max-width: 500px;
+    }
+    .commerce-subtitle {
+        width: 100%;
+        max-width: 1090px;
+    }
+    .commerce-discription {
+        width: 100%;
+        max-width: 1090px;
+    }
+    .commerce-forma {
+        max-width: 527px;
+    }
+    .forma-consl {
+        max-width: 527px;
+    }
+}
+
+@media (max-width: 767px) {
+    .commerce-top {
+        text-align: left;
+        padding-top: 20px;
+    }
+    .commerce-title {
+        margin: 0 0 20px 0;
+    }
+    .commerce-discription {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .commerce-subtext {
+        flex-direction: column;
+    }
+    .commerce-list {
+        margin: 0;
+    }
+    .commerce-item {
+        margin-left: 20px;
+    }
+}

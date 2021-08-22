@@ -1,0 +1,130 @@
+@import "variable.scss";
+
+.command {
+    padding: 80px 0 20px 0;
+}
+.command-title {
+    margin: 0 auto 80px auto;
+    width: 864px;
+}
+.command-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.command-item {
+    width: 413px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+.command-text {
+    width: 413px;
+}
+.command-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.command-img {
+    padding: 9px 11px 9px 13px;
+    background-color: $color--bg_gray;
+    border-radius: 50%;
+}
+.name-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+    color: $color--contact;
+    text-decoration: none;
+    &:hover {
+        color: $color--accent;
+    }
+}
+.command-description {
+    font-size: 16px;
+    line-height: 22px;
+    color: $color--text_gray;
+}
+.footer-command {
+    border: none;
+    padding: 30px 0;
+}
+@media (max-width: 1319px) {
+    .command {
+        padding: 40px 20px 0 20px;
+    }
+    .command-list {
+       justify-content: center;
+    }
+    .command-item {
+        margin-right: 20px;
+        &:nth-child(3n) {
+            margin-right: 20px;
+        }
+
+    }
+    .footer-command {
+        padding: 30px 20px;
+    }
+    .command-title {
+        margin: 0 auto 60px auto;
+        width: 100%;
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 950px) {
+    .command-item {
+        width: 300px;
+    }
+    .command-face {
+        width: 300px;
+    }
+    .command-text {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 767px)  {
+    .command-title  {
+        margin: 0 auto 20px auto;
+    }
+    .command-item {
+        width: 100%;
+        display: flex;
+        margin-right: 0;
+        margin-bottom: 20px;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        &:last-child {
+            margin-bottom: 40px;
+        }
+    }
+    .command-text {
+        display: inline-block;
+    }
+    .command-face {
+        width: 158px;
+        height: 191px;
+        border-radius: 12px;
+    }
+    .command-adress {
+        border: none;
+        padding: 0;
+    }
+    .command-text {
+        width: 100%;
+        margin: auto 0 0 20px;
+    }
+    .command-description {
+       margin-bottom: 10px;
+    }
+    .footer-command {
+        padding: 20px 20px;
+    }
+}

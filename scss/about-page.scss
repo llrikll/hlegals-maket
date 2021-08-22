@@ -1,0 +1,232 @@
+@import "variable.scss";
+
+.about-lang {
+    color: $color--text_gray;
+}
+.active-lang {
+    background-color: $color--accent;
+    border-radius: 8px;
+    color: $color--white;
+    cursor: default;
+    &:hover {
+        background-color: $color--accent;
+        color: $color--white;
+    }
+}
+.about-address {
+    color: $color--text_gray;
+    &:hover {
+        border-bottom: 1px solid $color--text_gray;
+    }
+}
+.about-tell {
+    color: $color--text_gray;
+    &:hover {
+        border-bottom: 1px solid $color--text_gray;
+    }
+}
+.about-menu {
+    color: $color--reg_blue;
+    &:hover {
+        color: $color--accent;
+        border-bottom: none;
+    }
+}
+.activ-menu{
+    border-bottom: 2px solid $color--accent;
+    color: $color--accent;
+    cursor: default;
+    &:hover {
+        border-bottom: 2px solid $color--accent;
+        color: $color--accent;
+    }
+}
+.jurists {
+    padding: 80px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+.jurists-text {
+    margin-right: 42px;
+}
+.jurists-title {
+    width: 640px;
+    margin-bottom: $margin-bottom20;
+}
+.jurists-description ~ p {
+    width: 640px;
+    font-size: 21px;
+    line-height: 30px;
+    color: $color-black;
+}
+.merit-item {
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.merit-description {
+    width: 390px;
+    font-size: 18px;
+    line-height: 21px;
+    color: $color--contact;
+}
+.merit-img {
+    margin-bottom: 5px;
+}
+.merit-list {
+    display: inline-block;
+    padding: 0 0 0 18px;
+    border-left: 4px solid $color--dots;
+}
+.container-team {
+    width: 1440px;
+    margin: 0 auto;
+}
+.quality {
+    display: flex;
+    justify-content: center;
+    padding: 80px 0 93px 0;
+}
+.quality-title {
+    width: 414px;
+    margin-left: 40px;
+}
+.mobil_about-slaider {
+    display: none;
+}
+.achiev {
+    padding: 30px 0;
+    background-color: $color--bg_gray;
+}
+.achiev-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color--contact;
+    margin-bottom: 30px;
+}
+.swiper-slide {
+    position: static;
+    margin-bottom: $margin-bottom20;
+}
+.achiev-list {
+    display: flex;
+    justify-content: space-around;
+}
+.achiev-link {
+    display: block;
+}
+.swiper-pagination {
+    position: static;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    margin: 0 14px 0 0;
+    background-color: $color--reg_blue;
+    &:hover {
+        opacity: 0.7;
+        background-color: $color--hov_blue;
+    }
+}
+
+@media (max-width: 1440px) {
+    .team-foto {
+        width: 100%;
+    }
+    .container-team {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1319px) {
+    .jurists {
+        padding: 40px 20px;
+        align-items: center;
+    }
+    .jurists-title {
+        width: 100%;
+        max-width: 640px;
+        font-size: 35px;
+        line-height: 41px;
+    }
+    .jurists-description ~ p {
+        width: 100%;
+        max-width: 640px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .merit-description{
+        width: 100%;
+    }
+    .container-team {
+        width: 100%;
+    }
+    .quality {
+        padding: 40px 20px;
+    }
+    .achiev-item {
+        margin-right: 15px;
+    }
+    .achiev-img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 845px) {
+    .desctop_about-slaider {
+        display: none;
+    }
+    .mobil_about-slaider {
+        display: block;
+    }
+}
+
+@media (max-width: 767px) {
+    .about-logo {
+        width: 208px;
+        height: 31px;
+    }
+    .jurists {
+        padding-top: 20px;
+        flex-direction: column;
+    }
+    .jurists-title {
+        width: 100%;
+        max-width: 640px;
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .jurists-description ~ p {
+        width: 100%;
+        max-width: 640px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .jurists-text {
+        margin: 0 0 20px 0;
+    }
+    .merit-list {
+        padding: 15px 0 0 0;
+        border-top: 4px solid $color--dots;
+        border-left: none;
+    }
+    .team-foto {
+        height: 290px;
+        object-fit: cover; 
+    }
+    .quality {
+        padding: 20px 20px;
+        flex-direction: column;
+       
+    }
+    .quality-title {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    
+}

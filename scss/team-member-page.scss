@@ -1,0 +1,111 @@
+@import "variable.scss";
+
+.member-block {
+    display: flex;
+    justify-content: center;
+}
+.member-text {
+    padding-top: 25px;
+    margin-left: 40px;
+    width: 641px;
+}
+.member-name {
+    margin-bottom: 10px;
+}
+.member-contacts {
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    line-height: 19px;
+    color: $color--reg_blue;
+    margin-right: 20px;
+    &::before {
+        content: "\2022";
+        color: $color--dots;
+        font-size: 26px;
+        font-weight: 700;
+        left: -17px;
+        line-height: 18px;        
+        position: absolute;
+        top: -1px;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        color: $color--accent;
+    }
+}
+.member-description {
+    margin-right: 20px;
+}
+.member-sub {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-bottom: 4px solid $color--dots;
+}
+.experience-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color--contact;
+    margin-bottom: 10px;
+}
+.experience-description {
+    font-size: 18px;
+    line-height: 26px;
+    color: $color-black;
+    margin-bottom: 40px; 
+
+}
+.member-face {
+    max-width: 413px;
+    max-height: 500px;
+}
+@media (max-width: 1319px) {
+    .member-text {
+        width: 100%;
+        max-width: 600px;
+    }
+    .member-description {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 950px) {
+    .command {
+        padding: 20px;
+    }
+    .member-block {
+        flex-direction: column;
+        align-items: center;
+    }
+    .member-profil {
+        display: flex;
+        flex-direction: column;
+    }
+    .member-contacts {
+        margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &::before {
+            display: none;
+        }
+    }
+    .member-face {
+        width: 100%;
+        max-width: 413px;
+        max-height: 500px;
+    }
+    .member-sub {
+        margin-bottom: $margin-bottom20;
+    }
+    .member-text {
+        margin-left: 0;
+    }
+    .experience-description {
+        margin-bottom: $margin-bottom20;
+    }
+}
